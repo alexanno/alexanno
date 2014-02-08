@@ -234,14 +234,14 @@ i.scroll:hover {
 }
 /* Responsive */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	
   .header {
 	background: url(../img/monogram.png) no-repeat center center scroll; 
   }
 
   .callout {
-	background: url(../img/DSC03150.JPG) no-repeat center center scroll; 
+	background: url(../img/DSC03150.JPG) no-repeat center 38% scroll; 
   }
 
   .map {
