@@ -231,7 +231,10 @@
             var map;
             $(document).ready(function() {
 
-                map = L.map('map').setView([61.14356663907042, 10.422935485839844], 11);
+                map = L.map('map', {
+                    minZoom: 8
+                }).setView([61.14356663907042, 10.422935485839844], 11);
+
                 map.layerCtrl = new L.control.layers();
                 map.layerCtrl.addTo(map);
                 
