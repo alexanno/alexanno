@@ -207,7 +207,7 @@ i.service-icon {
 /* Map */
 
 .map {
-  height: 500px;
+  height: 300px;
   
 }
 
@@ -246,7 +246,7 @@ i.scroll:hover {
   }
 
   .map {
-	height: 75%;
+	height: 60%;
   }
 
 }
