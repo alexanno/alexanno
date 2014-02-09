@@ -241,9 +241,16 @@
                 var kart = L.tileLayer('http://{s}.tile.cloudmade.com/4a2bf6b7b4024fac93afff9715081585/998/256/{z}/{x}/{y}.png', {
                     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
                     maxZoom: 18
+                });//.addTo(map);        
+                map.layerCtrl.addBaseLayer(kart, "Raske kart");
+        
+
+                var kart2 = L.tileLayer('http://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=norges_grunnkart&zoom={z}&x={x}&y={y}', {
+                    attribution: "Maps: <a href='http://statkart.no' title='The National Mapping Authority of Norway'>Kartverket</a>",
+                    maxZoom: 18
                 }).addTo(map);
 
-                map.layerCtrl.addBaseLayer(kart, "Kart");
+                map.layerCtrl.addBaseLayer(kart2, "Norgeskart");
                 
                 var flyfoto = new L.TileLayer.WMS("http://www.webatlas.no/wms-orto", {
                     layers: 'hires',
