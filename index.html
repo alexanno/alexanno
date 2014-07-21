@@ -237,6 +237,8 @@
                     minZoom: 8
                 }).setView([61.14356663907042, 10.422935485839844], 11);
 
+                //addMousePos();
+
                 map.layerCtrl = new L.control.layers();
                 map.layerCtrl.addTo(map);
                 
@@ -268,6 +270,8 @@
 
                 var hotel = new L.Marker([61.11734, 10.47701]).bindPopup("Radisson Blu Lillehammer").addTo(map);
                 var holmaskogen = new L.Marker([61.13519, 10.46595]).bindPopup("Holmaskogen 11 <br>(grillfest på fredag)").addTo(map);
+
+                var parkering = new L.Marker([61.13479, 10.46698]).bindPopup("Parkering til grillfesten").addTo(map).openPopup();
                 
 
 
@@ -284,13 +288,17 @@
             var popup = L.popup();
 
             function onMapClick(e) {
+                console.log("You clicked the map at " + e.latlng.toString());
+                /*
                 popup
                     .setLatLng(e.latlng)
                     .setContent("You clicked the map at " + e.latlng.toString())
                     .openOn(map);
+                */
             }
             map.on('click', onMapClick);   
         }
+
 
         </script>
 
