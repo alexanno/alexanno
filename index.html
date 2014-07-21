@@ -274,7 +274,14 @@
 
                 var parkering = new L.Marker([61.13479, 10.46698]).bindPopup("Parkering til grillfesten").addTo(map).openPopup();
                 
-                var polyline = L.polyline([[61.13519, 10.46595], [61.13479, 10.46698]], {color: 'black'}).addTo(map);
+                var polyline = L.polyline([[61.13519, 10.46595], [61.13479, 10.46698]],
+                    {
+                        color: 'black',
+                        weight: 5,
+                        opacity: .7,
+                        dashArray: '1,10',
+                        lineJoin: 'round'
+                    }).addTo(map);
 
                 map.on('zoomend ', function(e) {
                 if ( map.getZoom() < 15 ){ 
