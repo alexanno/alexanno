@@ -235,7 +235,8 @@
 
                 map = L.map('map', {
                     minZoom: 8
-                }).setView([61.14356663907042, 10.422935485839844], 11);
+                }).setView([61.13479, 10.46698], 16);
+                //.setView([61.14356663907042, 10.422935485839844], 11);
 
                 //addMousePos();
 
@@ -273,7 +274,7 @@
 
                 var parkering = new L.Marker([61.13479, 10.46698]).bindPopup("Parkering til grillfesten").addTo(map).openPopup();
                 
-
+                var polyline = L.polyline([[61.13519, 10.46595], [61.13479, 10.46698]], {color: 'black'}).addTo(map);
 
                 map.on('zoomend ', function(e) {
                 if ( map.getZoom() < 15 ){ 
