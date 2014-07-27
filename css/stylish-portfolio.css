@@ -170,7 +170,7 @@ i.service-icon {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(../img/DSC03150.JPG) no-repeat center center fixed; 
+  background: url(../img/marit_alexander_brudebarn_1024.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -242,7 +242,7 @@ i.scroll:hover {
   }
 
   .callout {
-	background: url(../img/DSC03150.JPG) no-repeat center 38% scroll; 
+	background: url(../img/marit_alexander_brudebarn_1024.png) no-repeat center 38% scroll; 
   }
 
   .map {
